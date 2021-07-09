@@ -82,7 +82,7 @@
 //                 name: name,
 //                 age: age,
 //                 salary: salary,
-//                 position: position
+//                 position: position'
 //             });
 //             for (let i = 0; i < List.length; i++) {
 //                 console.log(List[i]);
@@ -96,8 +96,7 @@
 //             let salary=Number(prompt('Nhập lương mới nhân viên: '));
 //             let position=prompt('Nhập chức vụ mới nhân viên: ');
 //             for (let i = 0; i < List.length; i++) {
-//                 if(List[i].
-//                     name==name)
+//                 if(List[i].name==name)
 //                 {
 //                     List.splice(i,1,{
                         
@@ -118,8 +117,7 @@
 //             let name=prompt('Nhập tên nhân viên cần delete: ');
             
 //             for (let i = 0; i < List.length; i++) {
-//                 if(List[i].
-//                     name==name)
+//                 if(List[i].name==name)
 //                 {
 //                     List.splice(i,1,)
 //                 }
