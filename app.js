@@ -1,79 +1,151 @@
-// 1.
-// let chuoi = prompt("Input:");
-// let a = chuoi.startsWith("java");
-// if(a == true){
-//     alert("chuỗi này bắt đầu bằng java");
-// }
-// else{
-//     alert("chuỗi này không bắt đầu bằng java");
-// }
-
-// 
-// const a = [1, -10, 5, 18, -9, 5];
-// function array(mang){
-    
-//     max = Math.abs(mang[0]-mang[1]);
-//     for(i=0;i<mang.length - 1;i++){
-//         if(max < Math.abs(mang[i]-mang[i+1])){
-//             max = Math.abs(mang[i]-mang[i+1])
-//         }
+// 1
+// let str_input = {};
+// str_input = prompt("Input:");
+// function main(str){
+//     var newString = "";
+//     for (let index = str.length - 1; index >= 0; index--) {
+//         newString += str[index];
 //     }
-//     return max;
+//     return newString;
 // }
-//  b = array(a);
-// console.log(b);
+// b = main(str_input);
+// console.log('"' + b + '"');
 
 // 2
-// const a = [100,1,1, -10, 5, 18, -9, 5,30,100];
-// function first(array,n){
-//     new_arr= [];
-//     if(n > array.length){
-//         n = array.length;
-//     }
-//     for(i=0;i<n;i++){
-//         new_arr[i] = array[i];
-//     }
-//     console.log(new_arr);
+// let str_input = {};
+// str_input = prompt("Input:");
+// function main(string)
+// {
+// return string.charAt(0).toUpperCase() + string.slice(1);
 // }
-// first(a,50);
+// b = main(str_input);
+// console.log('"' + b + '"');
 
 // 3
-// x = -2
-// y = 6
-// function check(a,b){
-//     if(a*b < 0){
-//         return true;
+// let arr_input = {};
+// arr_input = prompt("Input:");
+// function unique(arr) {
+//     var newArr = []
+//     for (var i = 0; i < arr.length; i++) {
+//       if (newArr.indexOf(arr[i]) === -1) {
+//         newArr.push(arr[i])
+//       }
 //     }
-//     else{
-//         return false;
-//     }
-// }
-// console.log(check(x,y));
+//     return newArr
+//   }
+//   b = unique(arr_input);
+//   console.log(b);
 
 // 4
-// let n = prompt("input:");
-// function checkabs(n){
-//     if(n>13){
-        
-//         return (2*(Math.abs(n-13)));
-//     }
-//     else{
-//         return  Math.abs(13-n);
-//     }
-// }
-// console.log(checkabs(n));
-
-// 5
-// a = [-10, 5, 18, -9,-100,200];
-// function findmax(mang){
-//     max = Math.abs(a[0]-a[1]);
-//     for(i = 0 ; i<mang.length-1; i++){
-//         for(j=i+1;j<mang.length;j++){
-//             if(max < Math.abs(a[i]-a[j])){
-//                 max = Math.abs(a[i]-a[j]);;
+// let List =[
+//         {
+            
+//             name: 'A',
+//             age: 18,
+//             salary: 1000230000,
+//             position: 'Boss'
+//         },
+//         {
+            
+//             name: 'B',
+//             age: 18,
+//             salary: 1110000000,
+//             position: 'Staff'
+//         },
+//         {
+            
+//             name: 'S',
+//             age: 18,
+//             salary: 11230000000,
+//             position: 'Manager'
+//         }
+//     ]
+    
+//     while(true)
+//     {
+//         let str=prompt('Nhập yêu cầu :(Read, Create, Update, Delete, Exit).');
+//         str=str.toLocaleLowerCase();
+//         if(str=='read')
+//         {
+//             for (let i = 0; i < List.length; i++) {
+//                 console.log(List[i]);
 //             }
 //         }
+//         else if(str=='create')
+//         {
+//             let name=prompt('Nhập tên nhân viên: ');
+//             let age=Number(prompt('Nhập tuổi nhân viên: '));
+//             let salary=Number(prompt('Nhập lương nhân viên: '));
+//             let position=prompt('Nhập chức vụ nhân viên: ');
+//             List.push({
+                
+//                 name: name,
+//                 age: age,
+//                 salary: salary,
+//                 position: position
+//             });
+//             for (let i = 0; i < List.length; i++) {
+//                 console.log(List[i]);
+//             }
+//         }
+//         else if(str=='update')
+//         {
+//             let name=prompt('Nhập tên nhân viên cần update: ');
+//             let namemoi=prompt('Nhập tên mới nhân viên : ');
+//             let age=Number(prompt('Nhập tuổi mới nhân viên: '));
+//             let salary=Number(prompt('Nhập lương mới nhân viên: '));
+//             let position=prompt('Nhập chức vụ mới nhân viên: ');
+//             for (let i = 0; i < List.length; i++) {
+//                 if(List[i].
+//                     name==name)
+//                 {
+//                     List.splice(i,1,{
+                        
+//                         name: namemoi,
+//                         age: age,
+//                         salary: salary,
+//                         position: position
+//                     })
+//                 }
+//             }
+//             for (let i = 0; i < List.length; i++) {
+//                 console.log(List[i]);
+//             }
+//         }
+    
+//         else if(str=='delete')
+//         {
+//             let name=prompt('Nhập tên nhân viên cần delete: ');
+            
+//             for (let i = 0; i < List.length; i++) {
+//                 if(List[i].
+//                     name==name)
+//                 {
+//                     List.splice(i,1,)
+//                 }
+//             }
+//             for (let i = 0; i < List.length; i++) {
+//                 console.log(List[i]);
+//             }
+//         }
+    
+//         else if(str=='exit'){
+//             break;
+//         }
 //     }
-//     console.log(max);
+// 5
+// let day = prompt("Ngày:");
+// let month = prompt("Tháng:");
+// let year = prompt("Năm:");
+// function ktNgayThangNam(ngay, thang, nam)
+// {
+//     let date = new Date(nam,thang-1,ngay);
+//     if (date.getFullYear() == nam && date.getMonth() + 1 == thang && date.getDate() == ngay) {
+//      alert(`Ngày ${day}/${month}/${year} là ngày hợp lệ`);
+//     }
+//     else
+//     {
+//         alert(`Ngày ${day}/${month}/${year} là ngày không hợp lệ`);
+//     }
 // }
-// findmax(a);
+// console.log(ktNgayThangNam(day,month,year))
